@@ -17,3 +17,58 @@ Hosted Online: Firebase
 
 Given the plethora of features and online accessibility, we foresee the potential user base to include businesses,
 educational institutions, and social groups looking for a robust, real-time communication platform.
+
+We will split the work fairly on us both.
+
+Database Design:
+Users Table:
+ID, username, password, profilePic
+Groups Table:
+ID, name
+Messages Table:
+id, message, users (IDs of involved users), sender (ID and name), createdAt, updatedAt
+The database will be implemented as Cloud Firestore collections/documents.
+
+Third Party Web-Services:
+Socket.io: Real-time bidirectional event-based communication between clients and servers.
+Marked Lib: A markdown compiler to help users with rich text formatting.
+Emoji Picker React Lib: Allows users to incorporate emojis in their chats.
+Axios: Handling HTTP requests.
+Styled Components: Incorporating CSS in JavaScript.
+
+Splitting the work: 
+Planning Phase:
+
+Together: Discuss the overall concept of the app, draft rough wireframes, and define main functionalities. Decide on the technologies you want to use.
+Database Design:
+
+Member A: Creates the initial draft of the database schema.
+Member B: Reviews and provides feedback. Then, collectively make modifications.
+Frontend Development:
+
+Member A: Starts with the main page or primary component layout.
+Member B: Works on secondary pages or components.
+Both: Then swap roles and enhance or expand on each other's code, ensuring both work on all parts of the frontend.
+Backend Development:
+
+Member B: Starts with the foundational structure of the backend, e.g., setting up the server, primary functionalities.
+Member A: Adds additional functions or refines the existing code.
+Both: Review code together, ensuring both are familiar with all parts of the backend.
+Firebase Integration:
+
+Member A: Integrates Firebase authentication.
+Member B: Integrates Firebase Cloud Firestore for data storage.
+Both: Review and test the integration together.
+Styling and UI Design:
+
+Member B: Develops the base design and primary styles.
+Member A: Refines the design and adds responsive features.
+Both: Review the final design together and make necessary adjustments.
+Testing and Debugging:
+
+Both: Collaboratively write tests and review the app for bugs. If a bug is found, the member who didn't originally write that piece of code can address the issue, deepening their understanding of that code segment.
+Documentation and Final Report:
+
+Member A: Begins writing the report, e.g., introduction, technology choices.
+Member B: Adds details and further sections, e.g., challenges, learning outcomes.
+Both: Revise and review the report together.
