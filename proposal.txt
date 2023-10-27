@@ -1,0 +1,19 @@
+Proposal Chat Application
+
+Overview:
+Our application is a state-of-the-art web-based chat system reminiscent of popular applications like Slack. 
+Our unique chat system allows multiple clients to communicate seamlessly in real-time via a shared backend. 
+Users have the freedom to choose between group chats or private 1:1 chats. Messages are synchronized across various clients, 
+ensuring that every user is up-to-date regardless of when they joined the chat.
+
+Unique Features & Potential Users:
+
+Chat Persistence: New clients can view the entire chat history upon joining.
+User Profiles: Includes avatars, registration, and login systems.
+Chatroom Varieties: Offers both private 1:1 chats and group chats.
+Rich Text Formatting: Users can send plain text, HTML, Markdown, and BBCode.
+Online Indicator: Shows when users are online and even when they are typing.
+Hosted Online: Firebase 
+
+Given the plethora of features and online accessibility, we foresee the potential user base to include businesses,
+educational institutions, and social groups looking for a robust, real-time communication platform.
