@@ -114,9 +114,7 @@ Express is a fast Node.js backend framework that offers, among other things, a r
 | leave      | Allows a socket to leave all rooms.                                                                                                        |
 | disconnect | Removes the user from the online list.                                                                                                     |
 
-|
-| send-msg  | Sends a message with the sender's name, sender's ID, and creation date to the respective room.                                                             
-|
+send-msg | Sends a message with the sender's name, sender's ID, and creation date to the respective room.
 
 # Getting Started with Create React App
 
