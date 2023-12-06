@@ -38,10 +38,10 @@ If everything is working correctly, the page should be accessible at [http://loc
   - Storage of messages, users, and groups is done in Firestore Cloud.
 - [ ] Users can transmit not only plain text but also HTML/Markdown/BBCode text.
   - Made possible by using the Marked library.
-- [ ] Users are assigned avatars as profile pictures.
+- [x] Users are assigned avatars as profile pictures.
 - [ ] Users can use emojis.
   - Made possible by the Emoji Picker React library.
-- [ ] Registration + Login
+- [x] Registration + Login
   - If the user enters their name during login, and this name has not been registered, they will be automatically redirected to registration, with their name already filled in. They will be assigned a randomly generated avatar that they can regenerate by clicking on the image. The username can contain a maximum of 16 characters, a valid email and a password with a minimum length of 6 must be entered. The image is encoded as a base64 string. The password is hashed using the bcrypt hash method, and the information is stored in the database.
 - [ ] Private chat rooms (1:1 chats) and group chats
   - Private chat: Every user can chat privately with any other user. The chat displays the message and the time it was sent. If your chat partner is currently writing to you, it is indicated.
