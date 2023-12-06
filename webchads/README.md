@@ -20,21 +20,21 @@ If everything is working correctly, the page should be accessible at [http://loc
 ### Basic Functionality and Our Implementation
 
 - Task:
-  - [ ] Implementation of a client-server chat application (similar to Slack)
-  - [ ] A simple chat application should be implemented in which it is possible for multiple clients to access a common backend, with the input of different participants being synchronized on other clients.
+  - [x] Implementation of a client-server chat application (similar to Slack)
+  - [x] A simple chat application should be implemented in which it is possible for multiple clients to access a common backend, with the input of different participants being synchronized on other clients.
 - Client:
-  - [ ] The client should have two areas, one for displaying the chat where your own messages and messages from other connected participants are displayed, and one for text input to send messages to all participants.
-  - [ ] Each client should be uniquely identifiable by a name.
+  - [x] The client should have two areas, one for displaying the chat where your own messages and messages from other connected participants are displayed, and one for text input to send messages to all participants.
+  - [x] Each client should be uniquely identifiable by a name.
     - Registered users/contacts are displayed in the contact window on the left. In the group, the sender's name is displayed with the message.
 - Backend:
-  - [ ] The backend should manage the individual connected clients and distribute the messages sent by individual clients to other connected clients.
-  - [ ] In the basic task, there is no need for persistence or user management.
+  - [x] The backend should manage the individual connected clients and distribute the messages sent by individual clients to other connected clients.
+  - [x] In the basic task, there is no need for persistence or user management.
 
 ### What Extras Have We Implemented?
 
-- [ ] Display of all connected clients/users
+- [x] Display of all connected clients/users
   - Online status is displayed under each contact.
-- [ ] Persistence of the chat history: When a new client connects, the previous chat history is transferred.
+- [x] Persistence of the chat history: When a new client connects, the previous chat history is transferred.
   - Storage of messages, users, and groups is done in Firestore Cloud.
 - [ ] Users can transmit not only plain text but also HTML/Markdown/BBCode text.
   - Made possible by using the Marked library.
