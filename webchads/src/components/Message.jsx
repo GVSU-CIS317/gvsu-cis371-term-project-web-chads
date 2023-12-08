@@ -12,6 +12,17 @@ const Message = ({ message }) => {
     ref.current?.scrollIntoView({ behavior: "smooth" });
   }, [message]);
 
+  const formatDate = (timestamp) => {
+    const date = new Date(timestamp.seconds * 1000); // Convert seconds to milliseconds
+    const hours = date.getHours();
+    const minutes = date.getMinutes();
+    
+    // Format the time as HH:mm
+    const formattedTime = `${hours}:${minutes.toString().padStart(2, '0')}`;
+    
+    return formattedTime;
+  };
+
   return (
     <div
       ref={ref}
@@ -26,7 +37,7 @@ const Message = ({ message }) => {
           }
           alt=""
         />
-        <span>just now</span>
+        <span>{formatDate(message.date)}</span>
       </div>
       <div className="messageContent">
         <p>{message.text}</p>
