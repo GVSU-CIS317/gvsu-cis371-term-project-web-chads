@@ -16,12 +16,17 @@ const Message = ({ message }) => {
     const date = new Date(timestamp.seconds * 1000); // Convert seconds to milliseconds
     const hours = date.getHours();
     const minutes = date.getMinutes();
-    
+
     // Format the time as HH:mm
-    const formattedTime = `${hours}:${minutes.toString().padStart(2, '0')}`;
-    
+    const formattedTime = `${hours}:${minutes.toString().padStart(2, "0")}`;
+
     return formattedTime;
   };
+
+  const createMarkup = (text) => {
+    return { __html: text };
+  };
+
 
   return (
     <div
@@ -40,7 +45,7 @@ const Message = ({ message }) => {
         <span>{formatDate(message.date)}</span>
       </div>
       <div className="messageContent">
-        <p>{message.text}</p>
+        <div dangerouslySetInnerHTML={createMarkup(message.text)} />
         {message.img && <img src={message.img} alt="" />}
       </div>
     </div>

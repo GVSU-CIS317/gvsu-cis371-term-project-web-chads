@@ -232,7 +232,7 @@
       .messages {
         background-color: #ddf7e2;
         padding: 10px;
-        height: calc(100% - 160px);
+        height: calc(100% - 210px);
         overflow: scroll;
 
         .message {
@@ -293,17 +293,12 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+        max-height: fit-content;
+        min-height: 100px;
 
-        input {
+        .quill {
           width: 100%;
-          border: none;
-          outline: none;
-          color: #2d5230;
-          font-size: 18px;
-
-          &::placeholder {
-            color: lightgray;
-          }
+          padding-right: 10px;
         }
 
         .send {
